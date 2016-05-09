@@ -255,6 +255,21 @@ A POST to this resource expects a JSON string in the POST body with the followin
   }
 }
 ```
+Example:
+```json
+{
+    "molecule": {
+        "value": "Fc1cc(c(F)cc1F)C[C@@H](N)CC(=O)N3Cc2nnc(n2CC3)C(F)(F)F",
+        "input": {
+            "format": "smiles",
+            "gz": false
+        },
+        "output": {
+            "format": "mol"
+        }
+    }
+}
+```
 
 And returns a JSON response with the following schema:
 
